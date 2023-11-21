@@ -43,4 +43,14 @@ console.log(x);
 
 //comparisson operators
 console.log (ageSara >= 18)
+const averageAge = (ageSara + ageBruno) / 2
+console.log(averageAge)
 
+const massMark = 78
+const heightMark = 1.69
+const massJohn = 92
+const heightjohn = 1.95
+
+const BMIMark = massMark / (heightMark * heightMark)
+const BMIJohn = massJohn / (heightjohn * heightjohn)
+console.log(BMIJohn, BMIMark)
