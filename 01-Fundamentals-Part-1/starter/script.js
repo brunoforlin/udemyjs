@@ -22,7 +22,7 @@ age = 31;
 const birthYear = 1991;
 //birthYear = 1990; nao pode no js.
 */
-
+/*
 const now = 2037;
 const ageBruno = now - 2008;
 const ageSara = now - 2016;
@@ -54,3 +54,49 @@ const heightjohn = 1.95
 const BMIMark = massMark / (heightMark * heightMark)
 const BMIJohn = massJohn / (heightjohn * heightjohn)
 console.log(BMIJohn, BMIMark)
+
+//strings
+
+const firstName2 = 'bruno';
+const birthYear = 1986;
+const year = 2023;
+const job = 'driver';
+
+const brunoNew = `i'm ${firstName2}, a ${year - birthYear} year old ${job}`
+console.log(brunoNew)
+//multiple strings
+
+console.log(`strings
+in multiple
+lines`) */
+
+//teste carteira motorista
+/*
+const age = 17;
+const isOldEnough = age >= 18;
+
+console.log(isOldEnough);
+if (isOldEnough) {
+    console.log(`bruno can start driving license`)
+}
+*/
+
+const age = 19;
+
+if (age >= 18) {
+    console.log(`Bruno can start driving license`)
+} else {
+   const yearsLeft = 18 - age;
+   console.log(`Bruno is too young, wait another ${yearsLeft} years.`) 
+}
+
+
+const birthYear = 1986;
+let century;
+
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+console.log (century)
