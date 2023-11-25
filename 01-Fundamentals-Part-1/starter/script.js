@@ -175,6 +175,9 @@ TEST DATA: Dolphins scored 96, 108, and 89. Koalas scored 88, 91, and 110.
 
 */
 
+
+/*exercicio condicional 
+
 const scoreDolphins = (96 + 108 + 45) / 3;
 const scoreKoalas = (96 + 108 + 39) / 3;
 console.log(scoreDolphins, scoreKoalas);
@@ -187,3 +190,48 @@ if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
 } else {
     console.log("No team win the trophy");
 }
+*/
+
+// switch case
+/*
+const day = 'thurday';
+
+switch (day) {
+    case 'monday':
+       console.log('plan course structure');
+        break;
+    case 'tuesday': 
+        console.log ('prepare theory videos');
+        break;
+    case 'wednesday': 
+    case 'thurday': 
+        console.log('write code examples');
+        break;
+    case 'fryday' :
+        console.log('Record videos');
+        break;
+    case 'saturday':
+    case 'sunday' : 
+        console.log ('enjoy the weekend');
+        break;
+
+    default:
+        console.log ('not a valid day')
+        break;
+} */
+
+const age = 15;
+//age >= 18 ? console.log("I like to drink wine") : console.log("I like to drink water");
+
+const drink = age >= 18 ? 'wine' : 'water';
+console.log(drink)
+
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`)
+
+
+const bill = 430;
+
+const tip = bill >= 50 && bill <= 300 ? (bill / 100) * 15 : (bill / 100) * 20;
+console.log (tip);
+ 
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
