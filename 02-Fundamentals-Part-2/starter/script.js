@@ -48,7 +48,7 @@ function logger() {
  console.log(yearUntilRetirement(1986)) */
 
  //fruit processor
-
+/*
  const cutPieces = function (fruit){
    return fruit * 4;
  }
@@ -82,4 +82,69 @@ const calcAge = function (year){
  }
 
  console.log(yearsUntilRetirement(1986, 'Bruno'));
- console.log(yearsUntilRetirement(1950, 'celso'));
+ console.log(yearsUntilRetirement(1950, 'celso')); */
+
+ // desafio 
+
+ const calcMedia = (v1,v2,v3) => (v1+v2+v3) / 3;
+
+ const scoreDolphins = calcMedia(20,23,71);
+ const scoreKoalas = calcMedia(20,54,49);
+
+ const checkWinner = function (avgDolphins,avgKoalas) {
+   if (avgDolphins  >= 2 * avgKoalas) {
+      console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`);
+      return scoreDolphins;
+   }
+   else if (avgKoalas >= 2* avgDolphins) {
+      console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`);
+   }
+   else {
+      console.log("no team wins...");
+   }
+ }
+
+console.log(calcMedia(1,2,5));
+console.log(scoreDolphins);
+checkWinner(scoreDolphins,scoreKoalas);
+
+
+//arrays
+
+const names = [1, 6, 8];
+
+console.log(names[0]);
+
+console.log(names[2]);
+
+console.log(names.length); // comprimento, qtas variaveis existesm na array.
+console.log(names[names.length -1])
+
+names [2] = 5;
+console.log(names);
+
+const firstName = 'bruno';
+
+const bruno = [firstName, 'forlin', 2023 - 1986,'dentista', names];
+
+console.log(bruno);
+console.log(bruno.length);
+
+
+
+
+// testando arrays 2
+
+const calculandoage = function (birfthday) {
+   return 2023 - birfthday;
+}
+
+const anos = [1990, 1965, 1987, 1679, 1904];
+
+const idade1 = calculandoage(anos[0]);
+const idade2 = calculandoage(anos[2]);
+const idade3 = calculandoage(anos[anos.length - 1]);
+console.log(idade1, idade2, idade3);
+
+const ages = [calculandoage(anos[0]), calculandoage(anos[2]), calculandoage(anos[anos.length - 1])];
+console.log(ages);
