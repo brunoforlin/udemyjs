@@ -85,7 +85,7 @@ const calcAge = function (year){
  console.log(yearsUntilRetirement(1950, 'celso')); */
 
  // desafio 
-
+/*
  const calcMedia = (v1,v2,v3) => (v1+v2+v3) / 3;
 
  const scoreDolphins = calcMedia(20,23,71);
@@ -147,4 +147,31 @@ const idade3 = calculandoage(anos[anos.length - 1]);
 console.log(idade1, idade2, idade3);
 
 const ages = [calculandoage(anos[0]), calculandoage(anos[2]), calculandoage(anos[anos.length - 1])];
-console.log(ages);
+console.log(ages); */
+
+// adicionando itens na array
+/*
+const friends = ['peter', 'carlos', 'bruno'];
+friends.push('jay'); //coloca no ultimo elemento da array e pop para remover
+friends.unshift('don'); //coloca no primeiro slot da array shift para remover
+console.log(friends);
+
+console.log(friends.indexOf('bruno'));
+console.log(friends.includes('bruno'));
+
+if (friends.includes('bruno')) {
+   console.log("you have a friend called bruno");
+} */
+
+// desafio 
+
+const calcTip = function (bill) {
+   return bill >= 50 && <= 300 ? bill * 0.15 : bill * 0.20;
+
+}
+
+const bills = [125,555,44];
+const tips = calcTip(bills[0], bills[1], bills[2]);
+const valTotal = calcTip()
+
+console.log(bills, tips);
